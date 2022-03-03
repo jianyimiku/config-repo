@@ -1,3 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://42.192.150.55:3306/SpringCloud_Sell?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+  jpa:
+    show-sql: true
 eureka:
   instance:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
